@@ -21,6 +21,7 @@ namespace COMP003A.Assignment3
             bool hasvalidID = Console.ReadLine() == ("yes");
             Console.Write("Have you completed orientation? (yes/no): ");
             bool completedorientation = Console.ReadLine() == ("yes");
+            Console.Write("Readiness Status: ");
                 if (hasvalidID && completedorientation)
                 {
                     Console.WriteLine("Ready");
