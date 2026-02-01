@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using System.ComponentModel.Design;
 using System.Runtime.CompilerServices;
 
 namespace COMP003A.Assignment3
@@ -17,15 +18,38 @@ namespace COMP003A.Assignment3
             Console.WriteLine($"Calculated Age: 21");
             Console.WriteLine($"Readiness Category: Adult");
             Console.Write("Do you have a valid ID? (yes/no): ");
-            Console.WriteLine("");
+            bool hasvalidID = Console.ReadLine() == ("yes");
             Console.Write("Have you completed orientation? (yes/no): ");
-            Console.WriteLine("");
+            bool completedorientation = Console.ReadLine() == ("no");
+            if (age >= 18)
+                if (hasvalidID && completedorientation)
+                {
+                    Console.WriteLine("Ready");
+                }
+                else
+                {
+                    Console.WriteLine("Not Ready");
+                }
+            else if (hasvalidID || completedorientation) ;
+            {
+                Console.WriteLine("Conditionally Ready");
+            }
+            {
+                Console.WriteLine("Select a guidance option:");
+                Console.WriteLine("1 - Academic Planning");
+                Console.WriteLine("2 - Personal Planning");
+                Console.WriteLine("3 - Career Planning");
+                Console.WriteLine("Enter Choice: 1");
+                int num = 1;
+                int num1 = 2;
+                int num2 = 3;
+                if (num <= 1);
+                {
+                Console.Write("Guidance:");
+                Console.WriteLine("Meet with an academic advisor to plan your next term");
+            }
 
-
-          
-
-            
-            
+            }
         }
     }
 }
