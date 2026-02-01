@@ -20,19 +20,18 @@ namespace COMP003A.Assignment3
             Console.Write("Do you have a valid ID? (yes/no): ");
             bool hasvalidID = Console.ReadLine() == ("yes");
             Console.Write("Have you completed orientation? (yes/no): ");
-            bool completedorientation = Console.ReadLine() == ("no");
-            if (age >= 18)
+            bool completedorientation = Console.ReadLine() == ("yes");
                 if (hasvalidID && completedorientation)
                 {
                     Console.WriteLine("Ready");
                 }
-                else
-                {
-                    Console.WriteLine("Not Ready");
-                }
-            else if (hasvalidID || completedorientation) ;
+            else if (hasvalidID || completedorientation)
             {
-                Console.WriteLine("Conditionally Ready");
+                    Console.WriteLine("Conditionally Ready");
+                }
+            else
+            {
+                Console.WriteLine("Not Ready");
             }
             {
                 Console.WriteLine("Select a guidance option:");
