@@ -22,7 +22,7 @@ namespace COMP003A.Assignment3
             Console.Write("Have you completed orientation? (yes/no): ");
             bool completedorientation = Console.ReadLine() == ("no");
             if (age >= 18)
-                if (hasvalidID || completedorientation)
+                if (hasvalidID && completedorientation)
                 {
                     Console.WriteLine("Ready");
                 }
@@ -45,7 +45,7 @@ namespace COMP003A.Assignment3
                 int num2 = 3;
                 if (num <= 1);
                 {
-                Console.Write("Guidance:");
+                Console.Write("Guidance: ");
                 Console.WriteLine("Meet with an academic advisor to plan your next term");
             }
 
